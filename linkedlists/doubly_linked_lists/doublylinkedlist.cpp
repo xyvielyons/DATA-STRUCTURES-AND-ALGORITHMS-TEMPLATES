@@ -57,6 +57,27 @@ struct node* addToBeginning(struct node*head,int data){
     //we then return head
     return head;
 }
+
+void addToEnd(struct node*head, int data){
+    //we first create the node
+    struct node* temp = new node;
+    temp->data=data;
+    temp->next=nullptr;
+    temp->prev=nullptr;
+    
+    //we create a ptr to point at the head node initially
+    struct node* ptr = head;
+    //we treverse through the list to reach the end node 
+    //the end node has its next pointer assigned to NULL
+    while(ptr->next != nullptr){
+        ptr = ptr->next;
+    }
+    //we then assign the last node next address to point to our new node
+    ptr->next = temp;
+    temp->prev = ptr;
+    
+
+}
 int main(){
     //creating our first head node
     struct node *head = new node;
@@ -69,6 +90,8 @@ int main(){
     head = addToEmptyList(head,45);
 
     head  = addToBeginning(head,100);
+
+    addToEnd(head,200);
 
     count_of_nodes(head);
 
