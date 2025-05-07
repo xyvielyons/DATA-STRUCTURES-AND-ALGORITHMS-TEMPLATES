@@ -53,7 +53,7 @@ void add_at_end(struct node *head,int data){
     ptr->link = temp;
 };
 
-
+//adding a node at an empty list
 struct node* add_at_end_optimized(struct node *ptr,int data){
     //creates a new temp node
     struct node *temp = new node;
@@ -74,6 +74,7 @@ struct node* add_at_beginning(struct node *headptr,int data){
     ptr->link = NULL;
 
     ptr->link = headptr;
+    //we update the main header pointer to the new ptr pointer
     headptr = ptr;
     return headptr;
 

@@ -122,6 +122,21 @@
     "random": "cpp",
     "utility": "cpp",
     "text_encoding": "cpp",
-    "thread": "cpp"
+    "thread": "cpp",
+    "__hash_table": "cpp",
+    "__node_handle": "cpp",
+    "__split_buffer": "cpp",
+    "complex": "cpp",
+    "deque": "cpp",
+    "iomanip": "cpp",
+    "numbers": "cpp",
+    "numeric": "cpp",
+    "queue": "cpp",
+    "semaphore": "cpp",
+    "sstream": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp",
+    "stop_token": "cpp",
+    "cinttypes": "cpp"
   }
 }
