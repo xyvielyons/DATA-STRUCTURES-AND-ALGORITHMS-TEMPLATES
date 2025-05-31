@@ -6,6 +6,7 @@ struct node {
     struct node *link;
 };
 
+
 void count_of_nodes(struct node *head){
     int count = 0;
     //if the head node is NULL it means our linked list is empty
