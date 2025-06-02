@@ -68,7 +68,7 @@ int dequeue(){
         x = queue_arr[front];
         //initially front was index 0
         //we are incrementing it to go to the next index 1 so that we can access the second index in the list
-        front = (front+1)%4;
+        front = (front+1)%MAX;
     }
 
     return x;
